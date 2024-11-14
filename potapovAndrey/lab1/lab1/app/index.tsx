@@ -1,26 +1,20 @@
 import { useState } from "react";
 import { Text } from "react-native";
+import Lab1 from "./lab1";
+import Lab2 from "./lab2";
+import { NavigationContainer } from "@react-navigation/native";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { SafeAreaView, StyleSheet, TouchableOpacity } from "react-native";
+import { createNativeWrapper } from "react-native-gesture-handler";
+
+const Tab = createBottomTabNavigator();
 
 export default function Index() {
-  const emoji = ['🍉','🍌','🍓','🍏', '🍊','🍑'];
-
-  const [current, setCurrent] = useState(0);
-  const [count, setCount] = useState(0)
-
-  const changeEmo = () => {
-    setCurrent((prevIndex) => (prevIndex + 1) % emoji.length);
-    setCount((prev) => (prev + 1));
-  };
-
   return (
-    <SafeAreaView style={styles.container}>
-      <Text style={styles.header}>FRUIT KOMBAT</Text>
-      <TouchableOpacity onPress={changeEmo} style={styles.emojiContainer}>
-        <Text style={styles.emoji}>{emoji[current]}</Text>
-      </TouchableOpacity>
-      <Text style={styles.counter}>FruitCoin: {count} $$</Text>
-    </SafeAreaView>
+    <Tab.Navigator>
+      <Tab.Screen name="Лаба 1" component={Lab1} />
+      <Tab.Screen name="Лаба 2" component={Lab2} />
+    </Tab.Navigator>
   );
 }
 
@@ -28,8 +22,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    justifyContent: 'flex-start',
-    alignItems: 'center',
+    justifyContent: "flex-start",
+    alignItems: "center",
   },
   header: {
     fontSize: 40,
@@ -37,14 +31,14 @@ const styles = StyleSheet.create({
   },
   emojiContainer: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
   },
   emoji: {
     fontSize: 100,
   },
-  counter:{
+  counter: {
     fontSize: 30,
     marginTop: 20,
-  }
+  },
 });
