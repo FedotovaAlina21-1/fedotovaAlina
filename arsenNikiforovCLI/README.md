@@ -1,79 +1,69 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Лабораторные работы
 
-# Getting Started
+## Автор: Никифоров Арсен
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+### Группа: ФИИТ-21
 
-## Step 1: Start the Metro Server
+---
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+## Lab1: Игра с пузырьками
 
-To start Metro, run the following command from the _root_ of your React Native project:
+### Описание:
 
-```bash
-# using npm
-npm start
+Реализована простая игра, в которой пользователь должен перетаскивать пузырьки на экране. Основные особенности игры:
 
-# OR using Yarn
-yarn start
-```
+- Анимация и перетаскивание пузырьков с помощью **Animated** и **PanResponder**.
+- Ведение счёта и отображение таймера окончания игры с использованием хуков **useState** и **useEffect**.
+- Интерфейс с динамически обновляемыми элементами.
+- Игра завершается, когда время на таймере истекает, и выводится итоговый счёт.
 
-## Step 2: Start your Application
+---
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+## Lab2: NASA APOD API
 
-### For Android
+### Описание:
 
-```bash
-# using npm
-npm run android
+Приложение для работы с NASA Astronomy Picture of the Day (APOD) API. Основные возможности:
 
-# OR using Yarn
-yarn android
-```
+- Загрузка случайных изображений с описанием с помощью NASA APOD API.
+- Использование хуков **useReducer**, **useContext**, **useCallback** и **useMemo** для оптимизации управления состоянием и загрузки данных.
+- Возможность сохранения изображений в избранное с помощью кнопки "Сохранить в избранное", где изображение сохраняется в глобальное состояние.
+- Реализован просмотр сохранённых изображений через экран галереи, где отображаются данные о сохранённых изображениях (заголовок, дата, описание).
+- Интерфейс с элементами навигации и адаптивной версткой.
 
-### For iOS
+---
 
-```bash
-# using npm
-npm run ios
+## Lab3: Космический калькулятор
 
-# OR using Yarn
-yarn ios
-```
+### Описание:
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+Игра, в которой пользователь решает математические задачи для спасения галактики. Основные особенности:
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+- Генерация математических задач с возрастающей сложностью.
+- Игрок продвигается по уровням, правильно отвечая на вопросы.
+- Игра завершается победой при достижении 10 уровня.
+- Игра завершается поражением при совершении 3 ошибок.
 
-## Step 3: Modifying your App
+### Технологии:
 
-Now that you have successfully run the app, let's modify it.
+- Использование хуков **useState**, **useMemo**, **useCallback** для управления состоянием и оптимизации.
+- Тактильная отдача и анимации для улучшения пользовательского опыта.
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+### Интерфейс:
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+- Космическая тематика с использованием фоновых изображений и градиентов.
+- Интерактивный интерфейс с виртуальной клавиатурой для ввода ответов.
 
-## Congratulations! :tada:
+---
 
-You've successfully run and modified your React Native App. :partying_face:
+## Навигация и стилизация
 
-### Now what?
+- Приложение использует библиотеку **@react-navigation/native** для навигации между экранами.
+- Применены стили и фоновые изображения для улучшения интерфейса.
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+---
 
-# Troubleshooting
+## Дополнительно
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+[**Figma Design**](https://www.figma.com/design/7vNLU8U3sQsqcYa2tntB0c/Untitled?node-id=0-1&t=UzYchR2kJgT2nZ4j-1)  
+Проект макета интерфейса доступен для просмотра в Figma.

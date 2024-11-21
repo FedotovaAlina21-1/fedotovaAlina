@@ -1,0 +1,1 @@
+Figma: https://www.figma.com/design/4ZiFEy7jQsbbHbU3LI0j8i/gavrilevAysien?node-id=0-1&node-type=canvas&t=21HoyDgbVvNUYsL8-0
