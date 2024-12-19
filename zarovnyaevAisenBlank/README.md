@@ -1,0 +1,1 @@
+Figma: https://www.figma.com/design/ZxnYj7UyqxnlwfYZ8z09Mz/zarovnyaevAisen?node-id=0-1&t=rfCQobrrec3tecQk-1
